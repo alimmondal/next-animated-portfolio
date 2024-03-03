@@ -7,8 +7,8 @@ const NavLink = ({ link }) => {
 
   return (
     <Link
-      className={`rounded px-1 ${
-        pathName === link.url && "bg-black text-white"
+      className={`rounded-sm px-2 py-1 ${
+        pathName === link.url && "bg-sky-500 text-white"
       }`}
       href={link.url}
     >

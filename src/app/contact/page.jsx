@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { motion } from "framer-motion";
 
 const AboutPage = () => {
@@ -10,7 +9,8 @@ const AboutPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      About
+      
+      Contact
     </motion.div>
   );
 };

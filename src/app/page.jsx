@@ -1,8 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const Homepage = () => {
+  const { push } = useRouter();
   return (
     <motion.div
       className="h-full"
@@ -17,7 +19,7 @@ const Homepage = () => {
         </div>
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-4 md:gap-8 items-center justify-center">
-          <h1 className="text-xl md:text-6xl font-bold">
+          <h1 className="text-xl md:text-4xl font-bold">
             Crafting Digital Experience, Designing Tomorrow{" "}
           </h1>
           <p className="md:text-xl">
@@ -27,10 +29,16 @@ const Homepage = () => {
             commitment to excellence.
           </p>
           <div className="w-full flex gap-4">
-            <button className="p-2 md:p-4 rounded-lg ring-1 ring-sky-500 bg-sky-500 text-white">
+            <button
+              onClick={() => push("/portfolio")}
+              className="p-2 md:p-4 rounded-lg ring-1 ring-sky-500 bg-sky-500 text-white"
+            >
               View My Work
             </button>
-            <button className="p-2 md:p-4 rounded-lg ring-1 ring-sky-500">
+            <button
+              onClick={() => push("/contact")}
+              className="p-2 md:p-4 rounded-lg ring-1 ring-sky-500"
+            >
               Contact Me
             </button>
           </div>

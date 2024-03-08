@@ -99,21 +99,35 @@ const Navbar = () => {
 
       {/* SOCIAL */}
       <div className="hidden md:flex gap-2">
-        <Link href={"#"}>
+        <Link
+          href={"https://github.com/alimmondal"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <AiOutlineGithub size={24} />
         </Link>
-        <Link href={"#"}>
-          <FaFacebook size={24} className="text-sky-700" />
-        </Link>
-        <Link href={"#"}>
-          <AiFillInstagram size={24} className="text-rose-700" />
-        </Link>
-        <Link href={"#"}>
+        <Link
+          href={"https://www.linkedin.com/in/alim-mondol/"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <AiFillLinkedin size={24} className="text-sky-500" />
         </Link>
-        <Link href={"#"}>
-          <FaDiscord size={24} />
+        <Link
+          href={"https://www.facebook.com/profile.php?id=100022439445805"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaFacebook size={24} className="text-sky-700" />
         </Link>
+
+        {/* <Link href={"#"} target="_blank" rel="noopener noreferrer">
+          <AiFillInstagram size={24} className="text-rose-700" />
+        </Link> */}
+
+        {/* <Link href={"#"} target="_blank" rel="noopener noreferrer">
+          <FaDiscord size={24} />
+        </Link> */}
       </div>
 
       {/* RESPONSIVE MENU */}

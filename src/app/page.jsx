@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import styles from "../styles/Intro.module.css";
 
 const Homepage = () => {
   const { push } = useRouter();
@@ -18,10 +19,27 @@ const Homepage = () => {
           <Image src="/hero1.png" alt="" fill className="object-contain" />
         </div>
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-4 md:gap-8 items-center justify-center">
-          <h1 className="text-xl md:text-4xl font-bold">
+        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-4 md:gap-8 items-start justify-center">
+          <div className="text-start">
+            <p className="md:text-xl">Hi, </p>
+            <p className="md:text-xl mb-8">I&apos;m Alim. I&apos;m a</p>
+            <div className={styles.iTitle}>
+              <div className={styles.iTitleWrapper}>
+                <div className={styles.iTitleItem}>Web Developer,</div>
+                <div className={styles.iTitleItem}>
+                  Full-stack Web Developer,
+                </div>
+                <div className={styles.iTitleItem}>UI/UX Designer,</div>
+                <div className={styles.iTitleItem}>Photographer.</div>
+                {/* <div className={styles.iTitleItem}>Graphic Designer</div>
+                <div className={styles.iTitleItem}>Content Creator</div> */}
+              </div>
+            </div>
+          </div>
+
+          {/* <h1 className="text-xl md:text-4xl font-bold">
             Crafting Digital Experience, Designing Tomorrow{" "}
-          </h1>
+          </h1> */}
           <p className="md:text-xl">
             Welcome to my digital canvas, where innovation and creativity
             converge. With a keen eye for aesthetics and a mastery of code, my

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useRef } from "react";
+import AboutIcon from "../../components/AboutIcon";
 
 const items = [
   {
@@ -56,6 +57,9 @@ const PortfolioPage = () => {
     >
       <div className="h-[600vh] relative" ref={ref}>
         <div className="w-screen h-[calc(100vh-6rem)] flex flex-col items-center justify-center text-8xl text-center">
+          <div className="h-[70%]">
+            <AboutIcon />
+          </div>
           <div className="">My Works</div>
           <motion.svg
             initial={{ opacity: 0.2, y: 0 }}

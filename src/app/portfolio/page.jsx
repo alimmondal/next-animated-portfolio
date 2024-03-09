@@ -55,12 +55,13 @@ const PortfolioPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-[600vh] relative" ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)] flex flex-col items-center justify-center text-8xl text-center">
+      <div className="h-[400vh] relative" ref={ref}>
+        <div className="w-screen h-[calc(100vh-6rem)] flex flex-col items-center justify-center text-4xl text-center">
+          <div className="hidden md:block">My Works</div>
           <div className="h-[70%]">
             <AboutIcon />
           </div>
-          <div className="">My Works</div>
+          <div className="md:hidden">My Works</div>
           <motion.svg
             initial={{ opacity: 0.2, y: 0 }}
             animate={{ opacity: 1, y: "10px" }}

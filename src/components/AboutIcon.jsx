@@ -1,11 +1,5 @@
 "use client";
-// import {
-//   faCss3Alt,
-//   faHtml5,
-//   faReact,
-//   faWordpress,
-// } from "@fortawesome/free-brands-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import styles from "../styles/AboutIcon.module.scss";
 import {
   SiNextdotjs,
@@ -26,7 +20,7 @@ const AboutIcon = () => {
           <SiNextdotjs />
         </div>
         <div className={styles.face3}>
-          <FaReact />
+          <FaNodeJs />
         </div>
         <div className={styles.face4}>
           <SiPostgresql />
@@ -35,7 +29,7 @@ const AboutIcon = () => {
           <SiNextdotjs />
         </div>
         <div className={styles.face6}>
-          <FaNodeJs />
+          <SiRedux />
         </div>
       </div>
     </div>

@@ -29,9 +29,9 @@ const AboutPage = () => {
         ref={containerRef}
       >
         {/* TEXT CONTAINER */}
-        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
+        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-28 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
           {/* BIOGRAPHY CONTAINER */}
-          <div className="flex flex-col gap-12 justify-center">
+          <div className="flex flex-col gap-4 justify-center">
             {/* BIOGRAPHY IMAGE */}
             <Image
               src="https://lh3.googleusercontent.com/a/ACg8ocIsgoStUOp6ZB-TSAUaBqz6VebzjTyk9Z5OnXpUkdYNCNE=s96-c-rg-br100"
@@ -43,18 +43,22 @@ const AboutPage = () => {
             {/* BIOGRAPHY TITLE */}
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
-            <p className="text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              harum quibusdam cupiditate nobis accusamus sed aut aperiam,
-              reiciendis numquam! Voluptas voluptatibus obcaecati dolore itaque
-              suscipit! Vel doloremque numquam quam nihil.
+            <p className="text-lg text-justify">
+              I&apos;m Alim, a seasoned English lecturer for six years,
+              seamlessly blends his passion for language with a burgeoning
+              expertise in web development. Over the past 3 years, he has
+              diligently honed his skills in web development, embracing the
+              ever-evolving digital landscape. My commitment to both education
+              and technology reflects a dynamic individual dedicated to
+              continuous learning and growth, embodying the fusion of linguistic
+              finesse and technological prowess.
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className="italic">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              &quot;Beauty is truth, truth beauty&quot;
             </span>
             {/* BIOGRAPHY SIGN SVG*/}
-            <div className="self-end">SIGNATURE</div>
+            <div className="self-end italic">Alim</div>
             {/* BIOGRAPHY SCROLL SVG */}
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}

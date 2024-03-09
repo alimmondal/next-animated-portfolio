@@ -45,9 +45,9 @@ const AboutPage = () => {
             {/* BIOGRAPHY DESC */}
             <p className="text-lg text-justify">
               I&apos;m Alim, a seasoned English lecturer for six years,
-              seamlessly blends his passion for language with a burgeoning
-              expertise in web development. Over the past 3 years, he has
-              diligently honed his skills in web development, embracing the
+              seamlessly blends my passion for language with a burgeoning
+              expertise in web development. Over the past 3 years, i have
+              diligently honed my skills in web development, embracing the
               ever-evolving digital landscape. My commitment to both education
               and technology reflects a dynamic individual dedicated to
               continuous learning and growth, embodying the fusion of linguistic

@@ -9,7 +9,7 @@ const Homepage = () => {
   const { push } = useRouter();
   return (
     <motion.div
-      className="h-full w-[100vw]"
+      className="h-full"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}

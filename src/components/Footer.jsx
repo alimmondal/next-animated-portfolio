@@ -8,13 +8,12 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className={styles.footer}>
-      <Image
-        src={Wave}
-        alt=""
-        // style={{ width: "100%" }}
-        className="fill object-contain"
-      />
+    <div
+      className={styles.footer}
+      // style={{ backgroundImage: `url(${Wave.src})` }}
+    >
+      <Image src={Wave} alt="" className="w-full h-full" />
+
       <div className={styles.fContent}>
         <span>ialim.dev@gmail.com</span>
         <div className={styles.fIcons}>

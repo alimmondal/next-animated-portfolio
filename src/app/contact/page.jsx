@@ -95,7 +95,7 @@ const ContactPage = () => {
             {/* <span>My mail address is:</span> */}
             <input
               name="user_email"
-              placeholder="Mail"
+              placeholder="Your mail"
               type="text"
               required
               className="bg-transparent border-b-2 border-b-black outline-none"

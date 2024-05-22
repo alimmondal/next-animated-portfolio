@@ -3,8 +3,7 @@
   align-items: center;
   /* margin: -0.5rem -3.5rem; */
   position: relative;
-  margin-top: -15rem;
-  overflow: hidden;
+  margin-top: -14rem;
 }
 .fContent {
   position: absolute;
@@ -16,6 +15,7 @@
   margin-top: 4rem;
   gap: 4rem;
   color: black;
+  overflow: hidden;
 }
 .fIcons {
   display: flex;

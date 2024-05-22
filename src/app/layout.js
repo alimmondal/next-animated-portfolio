@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import TransitionProvider from "../components/transitionProvider";
 import "./globals.css";
-import Footer from "../components/Footer";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,9 +13,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-gradient-to-b from-blue-100 to-red-100`}>
         <TransitionProvider>{children}</TransitionProvider>
-        {/* <Footer/> */}
       </body>
     </html>
   );

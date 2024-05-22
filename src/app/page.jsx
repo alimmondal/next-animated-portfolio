@@ -16,16 +16,16 @@ const Homepage = () => {
     >
       <div className="h-full flex flex-col md:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 ">
         {/* IMAGE CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 relative">
+        <div className="h-[40%] lg:h-full lg:w-1/2 relative">
           <Image
             src="/hero1.png"
             alt=""
             fill
-            className="object-contain pt-10"
+            className="object-contain sm:pt-10"
           />
         </div>
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-4 md:gap-8 items-start justify-center">
+        <div className="h-[60%] lg:h-full lg:w-1/2 flex flex-col gap-4 md:gap-8 items-start justify-center">
           <div className="text-start">
             <p className="md:text-xl">Hy! </p>
             <p className="md:text-xl mb-4">I&apos;m Alim. I&apos;m a</p>

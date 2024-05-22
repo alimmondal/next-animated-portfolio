@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Navbar from "./navbar";
+import Footer from "./Footer";
 
 const TransitionProvider = ({ children }) => {
   const pathName = usePathname();
@@ -36,6 +37,9 @@ const TransitionProvider = ({ children }) => {
           <Navbar />
         </div>
         <div className="h-[calc(100vh-6rem)]">{children}</div>
+        {/* <div className="">
+          <Footer />
+        </div> */}
       </div>
     </AnimatePresence>
   );

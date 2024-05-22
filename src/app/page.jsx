@@ -3,17 +3,18 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import styles from "../styles/Intro.module.css";
+import Footer from "../components/Footer";
 
 const Homepage = () => {
   const { push } = useRouter();
   return (
     <motion.div
-      className="h-full"
+      className="h-full w-[100vw]"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full flex flex-col md:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+      <div className="h-full flex flex-col md:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 ">
         {/* IMAGE CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 relative">
           <Image
@@ -26,7 +27,7 @@ const Homepage = () => {
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-4 md:gap-8 items-start justify-center">
           <div className="text-start">
-            <p className="md:text-xl">Hi, </p>
+            <p className="md:text-xl">Hy! </p>
             <p className="md:text-xl mb-4">I&apos;m Alim. I&apos;m a</p>
             <div className={styles.iTitle}>
               <div className={styles.iTitleWrapper}>
@@ -59,6 +60,9 @@ const Homepage = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div className="">
+        <Footer />
       </div>
     </motion.div>
   );

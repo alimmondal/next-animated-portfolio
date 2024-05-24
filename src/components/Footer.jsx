@@ -19,9 +19,9 @@ const Footer = () => {
         <span>ialim.dev@gmail.com</span>
         <div className="flex gap-4">
           <span className="">Home</span>
-          <span className="">Home</span>
-          <span className="">Home</span>
-          <span className="">Home</span>
+          <span className="">Portfolio</span>
+          <span className="">Contact</span>
+          <span className="">About</span>
         </div>
         <div className={styles.fIcons}>
           <Insta color="black" size={"3rem"} />

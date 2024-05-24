@@ -46,17 +46,18 @@ const Homepage = () => {
             commitment to excellence.
           </p>
           <div className="w-full flex gap-4">
-            <button
-              onClick={() => push("/portfolio")}
-              className="p-2 md:p-3 rounded-lg ring-1 ring-sky-500 bg-sky-500 text-white"
-            >
-              View My Work
-            </button>
-            <button
-              onClick={() => push("/contact")}
-              className="p-2 md:p-3 rounded-lg ring-1 ring-sky-500"
-            >
+            {/* <div onClick={() => push("/contact")} className={styles.a}>
               Contact Me
+            </div> */}
+            <button className={styles.a} onClick={() => push("/contact")}>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Contact Me
+            </button>
+            <button onClick={() => push("/portfolio")} className={styles.b}>
+              View My Work
             </button>
           </div>
         </div>

@@ -9,7 +9,7 @@ import {
   AiOutlineGithub,
 } from "react-icons/ai";
 import { FaDiscord, FaFacebook } from "react-icons/fa";
-import NavLink from "./navLikn";
+import NavLink from "./navLink";
 
 const Navbar = () => {
   const [open, setOpen] = useState();

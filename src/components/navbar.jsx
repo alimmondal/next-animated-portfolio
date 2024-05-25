@@ -6,10 +6,12 @@ import { useState } from "react";
 import {
   AiFillInstagram,
   AiFillLinkedin,
+  AiFillPhone,
   AiOutlineGithub,
 } from "react-icons/ai";
 import { FaDiscord, FaFacebook } from "react-icons/fa";
 import NavLink from "./navLink";
+import { RiPhoneFill } from "react-icons/ri";
 
 const Navbar = () => {
   const [open, setOpen] = useState();
@@ -17,7 +19,8 @@ const Navbar = () => {
     { url: "/", title: "Home" },
     { url: "/about", title: "About" },
     { url: "/portfolio", title: "Portfolio" },
-    { url: "/contact", title: "Contact" },
+    // { url: "/contact", title: "Contact" },
+    { url: "/blog", title: "Blog" },
   ];
 
   const topVariants = {
@@ -97,8 +100,8 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* SOCIAL */}
-      <div className="hidden md:flex gap-2">
+      {/* SOCIAL/ PHONE */}
+      {/* <div className="hidden md:flex gap-2">
         <Link
           href={"https://github.com/alimmondal"}
           target="_blank"
@@ -119,6 +122,24 @@ const Navbar = () => {
           rel="noopener noreferrer"
         >
           <FaFacebook size={24} className="text-sky-700" />
+        </Link>
+      </div> */}
+      <div className="flex items-center gap-2">
+        <div className="hidden md:flex ">
+          <RiPhoneFill size={24} />
+          <p>
+            <a className="" href="tel:+01751337773">
+              +8801751337773
+            </a>
+          </p>
+        </div>
+        <Link href={"/contact"}>
+          <button
+            className="hidden md:flex gap-1 bg-[#fca61f] text-orange hover:border-orange-500 px-4 py-1 rounded-full hover:bg-white transition-all duration-500 hover:text-orange-500 hover:border"
+            style={{ boxShadow: "0px 20px 24px 3px rgba(251, 161, 40, 0.42)" }}
+          >
+            Contact
+          </button>
         </Link>
       </div>
 

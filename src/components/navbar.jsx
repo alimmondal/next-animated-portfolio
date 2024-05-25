@@ -88,11 +88,11 @@ const Navbar = () => {
       <div className="md:hidden lg:flex ">
         <Link
           href={"/"}
-          className="text-sm bg-sky-500 rounded-md p-1 font-semibold flex items-center justify-center"
+          className="text-sm bg-[#fca61f] rounded-md p-1 font-semibold flex items-center justify-center"
         >
-          <span className="text-white mr-1">Alim</span>
-          <span className="w-12 h-8 rounded bg-white text-sky-500 flex items-center justify-center">
-            .dev
+          <span className="text-white mr-1">M.A.</span>
+          <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">
+            Alim
           </span>
         </Link>
       </div>

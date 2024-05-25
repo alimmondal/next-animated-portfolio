@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import styles from "../styles/Intro.module.css";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 const Homepage = () => {
   const { push } = useRouter();
@@ -45,10 +46,8 @@ const Homepage = () => {
             portfolio showcases a diverse collection of projects that reflect
             commitment to excellence.
           </p>
-          <div className="w-full flex gap-4">
-            {/* <div onClick={() => push("/contact")} className={styles.a}>
-              Contact Me
-            </div> */}
+
+          <div className="flex gap-4">
             <button className={styles.a} onClick={() => push("/contact")}>
               <span></span>
               <span></span>
@@ -56,9 +55,9 @@ const Homepage = () => {
               <span></span>
               Contact Me
             </button>
-            <button onClick={() => push("/portfolio")} className={styles.b}>
+            <Link href={"/contact"} spy={true} smooth={true} className="button">
               View My Work
-            </button>
+            </Link>
           </div>
         </div>
       </div>

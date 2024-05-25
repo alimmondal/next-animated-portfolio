@@ -1,0 +1,49 @@
+{
+  "socialData": [
+    {
+      "icon": "instagram",
+      "title": "Instagram",
+      "link": "/",
+      "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718250873-3038n7.webp"
+    },
+    {
+      "icon": "behance",
+      "title": "Behance",
+      "link": "/"
+    },
+    {
+      "icon": "twitter",
+      "title": "Twitter",
+      "link": "/"
+    },
+    {
+      "icon": "linkedin",
+      "title": "LinkedIn",
+      "link": "/",
+      "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718263294-2lfj67.webp"
+    }
+  ],
+  "socialData2": [
+    {
+      "icon": "facebook-f",
+      "link": "/facebook",
+      "imageUrl": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718346601-xldm.webp"
+    },
+    {
+      "icon": "twitter",
+      "link": "/twitter",
+      "imageUrl": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718328750-d4jsq.webp"
+    },
+    {
+      "icon": "github",
+      "link": "/github",
+      "imageUrl": "https://cdn.dribbble.com/users/5745266/screenshots/13932589/untitled-1__9__4x.png"
+    },
+    {
+      "icon": "linkedin",
+      "title": "LinkedIn",
+      "link": "/",
+      "imageUrl": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718263294-2lfj67.webp"
+    }
+  ]
+}

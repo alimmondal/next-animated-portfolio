@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Navbar from "./navbar";
 import Footer from "./Footer";
+import CustomCursor from "../components/CustomCursor/CustomCursor";
 
 const TransitionProvider = ({ children }) => {
   const pathName = usePathname();
@@ -30,6 +31,7 @@ const TransitionProvider = ({ children }) => {
           initial={{ height: "140vh" }}
           animate={{ height: "0vh", transition: { delay: 0.5 } }}
         />
+        <CustomCursor />
         <div className="h-24">
           <Navbar />
         </div>

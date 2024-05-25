@@ -13,6 +13,7 @@
     "@iconscout/react-unicons": "^2.0.2",
     "@react-icons/all-files": "^4.1.0",
     "framer-motion": "^11.0.6",
+    "gsap": "^3.12.5",
     "next": "^14.1.2",
     "react": "18",
     "react-dom": "18",

@@ -13,6 +13,10 @@ const nextConfig = {
       {
         protocol: "https",
         hostname:"photos.google.com"
+      },
+      {
+        protocol: "https",
+        hostname:"portfolio-image-store.s3.ap-south-1.amazonaws.com"
       }
     ],
   }

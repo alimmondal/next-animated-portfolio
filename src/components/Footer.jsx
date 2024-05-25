@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "../styles/Footer.module.css";
 import Wave from "../../public/wave.png";
@@ -5,7 +6,7 @@ import Insta from "@iconscout/react-unicons/icons/uil-instagram";
 import Facebook from "@iconscout/react-unicons/icons/uil-facebook";
 import Gitub from "@iconscout/react-unicons/icons/uil-github";
 import Image from "next/image";
-import Navbar from "./navbar";
+import SocialLinks from "./SocialLinks/SocialLinks";
 
 const Footer = () => {
   return (
@@ -24,9 +25,17 @@ const Footer = () => {
           <span className="">About</span>
         </div>
         <div className={styles.fIcons}>
+          <SocialLinks />
+          {/* <Image
+            src="https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718263294-2lfj67.webp"
+            alt=""
+            width={48}
+            height={48}
+            className="w-[3rem] h-[3rem]"
+          />
           <Insta color="black" size={"3rem"} />
           <Facebook color="black" size={"3rem"} />
-          <Gitub color="black" size={"3rem"} />
+          <Gitub color="black" size={"3rem"} /> */}
         </div>
       </div>
     </div>

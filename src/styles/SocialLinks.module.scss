@@ -1,0 +1,47 @@
+.st-social-link {
+  .st-social-btn {
+    border-radius: 50px;
+    background-color: $dark-color2;
+    border: 0.5px solid $dark-color5;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    .st-social-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      transition: all 0.4s ease;
+
+      svg {
+        scale: 1.5;
+      }
+    }
+
+    .st-icon-name {
+      font-weight: 600;
+      color: #fdfeff;
+      overflow: hidden;
+      max-width: 0;
+      transition: all 0.5s ease;
+    }
+
+    &:hover,
+    &.active {
+      padding-right: 15px;
+
+      .st-icon-name {
+        max-width: 140px;
+      }
+    }
+  }
+}

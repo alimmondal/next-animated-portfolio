@@ -25,9 +25,10 @@
   ],
   "socialData2": [
     {
-      "icon": "facebook-f",
-      "link": "/facebook",
-      "imageUrl": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718346601-xldm.webp"
+      "icon": "linkedin",
+      "title": "LinkedIn",
+      "link": "https://www.linkedin.com/in/alim-mondol/",
+      "imageUrl": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718263294-2lfj67.webp"
     },
     {
       "icon": "twitter",
@@ -36,14 +37,13 @@
     },
     {
       "icon": "github",
-      "link": "/github",
-      "imageUrl": "https://cdn.dribbble.com/users/5745266/screenshots/13932589/untitled-1__9__4x.png"
+      "link": "https://github.com/alimmondal",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/2048px-Github-desktop-logo-symbol.svg.png"
     },
     {
-      "icon": "linkedin",
-      "title": "LinkedIn",
-      "link": "/",
-      "imageUrl": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718263294-2lfj67.webp"
+      "icon": "facebook",
+      "link": "https://www.facebook.com/profile.php?id=100022439445805",
+      "imageUrl": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718346601-xldm.webp"
     }
   ]
 }

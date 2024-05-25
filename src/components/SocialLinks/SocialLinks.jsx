@@ -19,8 +19,8 @@ const SocialLinks = () => {
       {socialData2?.map((item, index) => (
         <div key={index} className="">
           <Link
-            href={item.imageUrl}
-            className={`flex items-center overflow-hidden rounded-full border border-slate-500 transition-all duration-400 ${
+            href={item.link}
+            className={`flex items-center overflow-hidden rounded-full border border-slate-500 transition-all duration-300 ${
               index === activeLink ? "pr-3" : ""
             }`}
             onMouseEnter={() => handleIconHover(index)}

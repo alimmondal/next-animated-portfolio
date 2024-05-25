@@ -120,14 +120,6 @@ const Navbar = () => {
         >
           <FaFacebook size={24} className="text-sky-700" />
         </Link>
-
-        {/* <Link href={"#"} target="_blank" rel="noopener noreferrer">
-          <AiFillInstagram size={24} className="text-rose-700" />
-        </Link> */}
-
-        {/* <Link href={"#"} target="_blank" rel="noopener noreferrer">
-          <FaDiscord size={24} />
-        </Link> */}
       </div>
 
       {/* RESPONSIVE MENU */}

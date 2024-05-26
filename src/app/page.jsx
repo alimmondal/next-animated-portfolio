@@ -15,7 +15,7 @@ const Homepage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full flex flex-col md:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 ">
+      <div className="h-full flex flex-col md:flex-row px-4 sm:px-8 md:px-12 lg:px-20">
         {/* IMAGE CONTAINER */}
         <div className="h-[40%] lg:h-full lg:w-1/2 relative">
           <Image
@@ -47,16 +47,25 @@ const Homepage = () => {
             commitment to excellence.
           </p>
 
-          <div className="flex gap-4">
-            <button className={styles.a} onClick={() => push("/contact")}>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Contact Me
-            </button>
-            <Link href={"/contact"} spy={true} smooth={true} className="button">
-              View My Work
+          <div className="w-full flex gap-4">
+            <Link href={"/contact"}>
+              <button className={`py-2 px-4 tracking-widest ${styles.a}`}>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Contact Me
+              </button>
+            </Link>
+            <Link href={"/contact"} className="">
+              <button
+                className="tracking-widest py-2 px-4 transition-all duration-500 button "
+                // style={{
+                //   boxShadow: "0px 20px 24px 3px rgba(251, 161, 40, 0.42)",
+                // }}
+              >
+                View My Work
+              </button>
             </Link>
           </div>
         </div>

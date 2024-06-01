@@ -6,8 +6,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "dev-Alim",
-  description: "MERN stack developer PERN stack developer full stack developer nextjs developer, reactjs developer frontend developer backend developer nodejs developer",
+  title: "alim",
+  description: "web developer MERN stack developer PERN stack developer full stack developer nextjs developer, reactjs developer frontend developer backend developer nodejs developer",
 };
 
 export default function RootLayout({ children }) {

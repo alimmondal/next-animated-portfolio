@@ -25,7 +25,7 @@
   /* box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42); */
   border-radius: 3px;
   border: none;
-  color: white;
+  color: #000;
   font-size: 16px;
   /* padding: 11px 20px 11px 20px; */
 }
@@ -41,6 +41,25 @@
     0 0 80px #fec510;
   /* transition-delay: 0.25s; */
   background: white;
+}
+
+.button1 {
+  /* border: none; */
+  /* color: green; */
+  background-color: royalblue;
+  /* color: white;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100px;
+  cursor: pointer; */
+  animation: button1 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes button1 {
+  to {
+    background-color: #fca61f;
+  }
 }
 
 @media screen and (max-width: 480px) {

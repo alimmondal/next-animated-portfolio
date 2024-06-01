@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import data from "../../../Data.json";
+import Image from "next/image";
 
 const SocialLinks = () => {
   const [activeLink, setActiveLink] = useState(0);
@@ -12,7 +13,7 @@ const SocialLinks = () => {
   };
 
   const { socialData2 } = data;
-  console.log(socialData2);
+  // console.log(socialData2);
 
   return (
     <div className="flex space-x-5">
@@ -25,8 +26,13 @@ const SocialLinks = () => {
             }`}
             onMouseEnter={() => handleIconHover(index)}
           >
-            <span className="flex justify-center items-center rounded-full w-12 h-12 text-center transition-all duration-400 m-1.5">
-              <img src={`${item?.imageUrl}`} alt="Hero" />
+            <span className="flex justify-center items-center rounded-full w-12 h-12 text-center transition-all duration-400 sm:m-1.5">
+              <Image
+                src={`${item?.imageUrl}`}
+                width={48}
+                height={48}
+                alt="Hero"
+              />
             </span>
             <span
               className={`font-semibold text-slate-500 overflow-hidden transition-all duration-500 ${

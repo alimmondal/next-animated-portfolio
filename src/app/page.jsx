@@ -1,13 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import styles from "../styles/Intro.module.css";
 import Footer from "../components/Footer";
 import Link from "next/link";
 
 const Homepage = () => {
-  const { push } = useRouter();
+  // const { push } = useRouter();
   return (
     <motion.div
       className="h-full"
@@ -48,23 +48,23 @@ const Homepage = () => {
           </p>
 
           <div className="w-full flex gap-4">
-            <Link href={"/contact"}>
-              <button className={`py-2 px-4 tracking-widest ${styles.a}`}>
+            <Link href={"/portfolio"}>
+              <button className={`py-3 px-5 tracking-widest ${styles.a}`}>
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                Contact Me
+                View my portfolio
               </button>
             </Link>
             <Link href={"/contact"} className="">
               <button
-                className="tracking-widest py-2 px-4 transition-all duration-500 button "
+                className="tracking-widest py-[6px] px-4 transition-all duration-500 button flex sm:hidden"
                 // style={{
                 //   boxShadow: "0px 20px 24px 3px rgba(251, 161, 40, 0.42)",
                 // }}
               >
-                View My Work
+                Contact me
               </button>
             </Link>
           </div>

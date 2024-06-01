@@ -1,13 +1,8 @@
 "use client";
 
 import styles from "../styles/AboutIcon.module.scss";
-import {
-  SiNextdotjs,
-  SiPostgresql,
-  SiRedux,
-  SiTailwindcss,
-} from "react-icons/si";
-import { FaCss3Alt, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
+import { SiNextdotjs, SiPostgresql, SiRedux } from "react-icons/si";
+import { FaNodeJs, FaReact } from "react-icons/fa";
 
 const AboutIcon = () => {
   return (

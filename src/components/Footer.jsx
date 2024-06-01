@@ -11,7 +11,6 @@ const Footer = () => {
     { url: "/", title: "Home" },
     { url: "/about", title: "About" },
     { url: "/portfolio", title: "Portfolio" },
-    // { url: "/contact", title: "Contact" },
     { url: "/blog", title: "Blog" },
   ];
   return (
@@ -24,7 +23,9 @@ const Footer = () => {
       <div className={styles.fContent}>
         <div className="text-slate-500 flex items-center justify-center gap-2 text-md hover:text-red-700">
           {links.map((link) => (
-            <Link href={link.url}>{link.title}</Link>
+            <Link key={link?.title} href={link.url}>
+              {link.title}
+            </Link>
           ))}
         </div>
         <div className={styles.fIcons}>

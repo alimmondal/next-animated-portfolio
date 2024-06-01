@@ -4,10 +4,10 @@ import Upwork from "../../img/Upwork.png";
 import Fiverr from "../../img/fiverr.png";
 import Amazon from "../../img/amazon.png";
 import Shopify from "../../img/Shopify.png";
-import Facebook from "../../img/Facebook.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import {Link} from 'react-scroll'
+import { Link } from "react-scroll";
+import Image from "next/image";
 const Works = () => {
   // context
   const theme = useContext(themeContext);
@@ -54,20 +54,20 @@ const Works = () => {
           className="w-mainCircle"
         >
           <div className="w-secCircle">
-            <img src={Upwork} alt="" />
+            <Image width={48} height={48} src={Upwork} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+            <Image width={48} height={48} src={Fiverr} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Amazon} alt="" />
+            <Image width={48} height={48} src={Amazon} alt="" />
           </div>{" "}
           <div className="w-secCircle">
-            <img src={Shopify} alt="" />
+            <Image width={48} height={48} src={Shopify} alt="" />
           </div>
-          <div className="w-secCircle">
-            <img src={Facebook} alt="" />
-          </div>
+          {/* <div className="w-secCircle">
+            <Image width={48} height={48} src={Facebook} alt="" />
+          </div> */}
         </motion.div>
         {/* background Circles */}
         <div className="w-backCircle blueCircle"></div>

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useRef } from "react";
 import AboutIcon from "../../components/AboutIcon";
+import Footer from "../../components/Footer";
 
 const items = [
   {
@@ -86,6 +87,7 @@ const PortfolioPage = () => {
           </motion.svg>
         </div>
 
+        {/* Project items */}
         <div className="sticky top-0 flex h-screen gap-1 items-center overflow-hidden">
           <motion.div style={{ x }} className="flex">
             <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300 over" />
@@ -133,8 +135,9 @@ const PortfolioPage = () => {
           </motion.div>
         </div>
       </div>
+
       {/*  CALL TO ACTION */}
-      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
+      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center bg-gradient-to-b from-blue-100 to-red-100">
         <h1 className="text-4xl">Do you have a project?</h1>
         <div className="relative">
           <motion.svg
@@ -163,6 +166,7 @@ const PortfolioPage = () => {
           </button>
         </div>
       </div>
+      <Footer />
     </motion.div>
   );
 };

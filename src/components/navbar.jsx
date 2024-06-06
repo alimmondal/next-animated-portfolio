@@ -74,7 +74,7 @@ const Navbar = () => {
   return (
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
       {/* LINKS */}
-      <div className="hidden md:flex gap-4">
+      <div className="hidden md:flex gap-3">
         {links.map((link) => (
           <NavLink link={link} key={link.title} />
         ))}
@@ -120,10 +120,10 @@ const Navbar = () => {
         </Link>
       </div> */}
       <div className="flex items-center gap-2">
-        <div className="hidden md:flex ">
+        <div className="hidden md:flex text-orange-400">
           <RiPhoneFill size={24} />
           <p>
-            <a className="" href="tel:+01751337773">
+            <a className="text-black" href="tel:+01751337773">
               +8801751337773
             </a>
           </p>

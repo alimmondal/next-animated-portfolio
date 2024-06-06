@@ -15,7 +15,7 @@ const Homepage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full flex flex-col md:flex-row px-4 sm:px-8 md:px-12 lg:px-20">
+      <div className="h-full flex flex-col md:flex-row px-4 sm:px-8 md:px-12 lg:px-20 bg-gradient-to-b from-blue-100 to-red-100">
         {/* IMAGE CONTAINER */}
         <div className="h-[40%] lg:h-full lg:w-1/2 relative">
           <Image

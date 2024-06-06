@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import LoadingSpinner from "../../components/LoadingSpinner";
+import Footer from "../../components/Footer";
 
 const BlogPage = () => {
   const [loading, setLoading] = useState(false);
@@ -12,20 +13,24 @@ const BlogPage = () => {
       setLoading(false);
     }, 5000);
   }, []);
+
   return (
-    <div className="w-full h-full flex items-end justify-center">
+    <div className="w-full h-full ">
       {loading ? (
         <>
           <LoadingSpinner />
         </>
       ) : (
-        <iframe
-          src="https://mern-blog-luyx.onrender.com/"
-          frameborder="0"
-          width="90%"
-          height="95%"
-          className=""
-        ></iframe>
+        <>
+          <div className="w-full h-full flex items-center justify-center">
+            <iframe
+              src="https://mern-blog-luyx.onrender.com/"
+              width="90%"
+              height="95%"
+              className=""
+            ></iframe>
+          </div>
+        </>
       )}
     </div>
   );

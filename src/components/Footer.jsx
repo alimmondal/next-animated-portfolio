@@ -21,10 +21,10 @@ const Footer = () => {
       <Image src={Wave} alt="" className="w-full h-full" />
 
       <div className={styles.fContent}>
-        <div className="text-slate-500 flex items-center justify-center gap-2 text-md hover:text-red-700">
+        <div className="text-slate-500 flex items-center justify-center gap-2 hover:text-red-700 mt-20">
           {links.map((link) => (
             <Link key={link?.title} href={link.url}>
-              {link.title}
+              <p className="text-xl">{link.title}</p>
             </Link>
           ))}
         </div>

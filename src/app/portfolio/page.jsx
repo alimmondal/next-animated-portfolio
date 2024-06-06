@@ -166,7 +166,9 @@ const PortfolioPage = () => {
           </button>
         </div>
       </div>
-      <Footer />
+      <div className="mt-[-14rem]">
+        <Footer />
+      </div>
     </motion.div>
   );
 };

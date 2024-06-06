@@ -1,9 +1,10 @@
 .footer {
   display: flex;
   align-items: center;
+  justify-content: center;
   /* margin: -0.5rem -3.5rem; */
   position: relative;
-  margin-top: -14rem;
+  /* margin-top: -14rem; */
 }
 .fContent {
   position: absolute;
@@ -12,19 +13,31 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
   gap: 4rem;
   color: black;
   overflow: hidden;
+  transform: scale(0.6);
 }
 .fIcons {
   display: flex;
   gap: 2rem;
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 480px) {
   .footer {
-    margin-top: -3rem;
+    margin-top: -4rem;
+  }
+  .fContent {
+    transform: scale(0.6);
+    gap: 0.5rem;
+    margin-top: 3rem;
+  }
+}
+@media screen and (min-width: 481px) {
+  .footer {
+    margin-top: -4rem;
   }
   .fContent {
     transform: scale(0.6);

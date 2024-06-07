@@ -22,21 +22,20 @@ const PortfolioDetail = ({ params }) => {
     return <div>Item not found</div>;
   }
   return (
-    <div className="h-[100vh] bg-gradient-to-b from-blue-100 to-red-100">
-      <h1 className="text-2xl sm:text-4xl text-center py-5 sm:py-20">
+    <div className="h-[100vh] ">
+      <h1 className="text-2xl sm:text-4xl text-center py-3 sm:py-10">
         Project Detail
       </h1>
-      <div className="h-screen flex flex-col gap-2 md:gap-4 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 bg-gradient-to-b from-blue-100 to-red-100 md:pb-10 lg:pb-0 ">
-        <div className="h-1/4 lg:h-full lg:w-1/2 relative">
+      <div className="h-screen flex flex-col gap-2 md:gap-8 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 bg-gradient-to-b from-blue-100 to-red-100 md:pb-10 lg:pb-0 ">
+        <div className="h-1/4 md:h-full lg:w-1/2 relative ">
           <Image
             src={item.img}
-            width={800}
-            height={700}
+            fill
             alt="portfolio"
-            className="w-[600px] h-[800px] object-cover"
+            className="object-cover md:p-20"
           />
         </div>
-        <div className="h-3/4 lg:h-full lg:w-1/2 flex flex-col justify-center gap-2">
+        <div className="h-3/4 lg:h-full lg:w-1/2 flex flex-col items-start justify-center gap-2 md:gap-8">
           <h1 className="text-2xl sm:text-4xl">Type: {item?.title}</h1>
           <h1 className="text-">Overview: {item?.desc}</h1>
           <h1 className="text-xs">Tech-stack: {item.techStack}</h1>
@@ -46,9 +45,12 @@ const PortfolioDetail = ({ params }) => {
               <li key={index}>{feature}</li>
             ))}
           </ul>
-          <div className="text-xl text-sky-500">
+          <div className="text-xl text-sky-500 flex gap-2">
             <Link href={item.link} target="_blank" rel="noopener noreferrer">
-              <button>See live demo</button>
+              <button>Live demo</button>
+            </Link>
+            <Link href={item.link} target="_blank" rel="noopener noreferrer">
+              <button>Github link</button>
             </Link>
           </div>
         </div>

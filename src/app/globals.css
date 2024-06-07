@@ -27,12 +27,10 @@
   border: none;
   color: #000;
   font-size: 16px;
-  /* padding: 11px 20px 11px 20px; */
 }
 
 .button:hover {
   background: white;
-  /* cursor: pointer; */
   border: 1px solid var(--orange);
   color: var(--orange);
   box-shadow:
@@ -44,16 +42,32 @@
 }
 
 .button1 {
-  /* border: none; */
-  /* color: green; */
   background-color: royalblue;
-  /* color: white;
-  font-weight: bold;
-  padding: 20px;
-  border-radius: 10px;
-  width: 100px;
-  cursor: pointer; */
   animation: button1 0.5s ease-in-out infinite alternate;
+}
+
+.category {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: lightgray;
+  padding: 7px 14px;
+  letter-spacing: 2px;
+  background-color: purple;
+  overflow: hidden;
+}
+.category1 {
+  border-left: 5px solid #fb4c35;
+  width: auto;
+  display: block;
+  background: linear-gradient(to right, #fb4c35 50%, black 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+.category1:hover {
+  background-position: left bottom;
 }
 
 @keyframes button1 {

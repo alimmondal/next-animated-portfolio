@@ -15,7 +15,7 @@ const Homepage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full flex flex-col gap-2 md:gap-4 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 bg-gradient-to-b from-blue-100 to-red-100 pb-24 md:pb-10 lg:pb-0">
+      <div className="h-full flex flex-col gap-2 md:gap-4 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 bg-gradient-to-b from-blue-100 to-red-100 pb-24 md:pb-10 lg:pb-0">
         {/* IMAGE CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 relative">
           <Image src="/hero1.png" alt="" fill className="object-contain" />
@@ -49,19 +49,12 @@ const Homepage = () => {
                 <span></span>
                 <span></span>
                 <span></span>
-                View my portfolio
+                View portfolio
               </button>
             </Link>
-            {/* <Link href={"/contact"} className="">
-              <button
-                className="tracking-widest py-[6px] px-4 transition-all duration-500 button flex sm:hidden"
-                style={{
-                  boxShadow: "0px 20px 24px 3px rgba(251, 161, 40, 0.42)",
-                }}
-              >
-                Contact me
-              </button>
-            </Link> */}
+            <Link href={"/contact"}>
+              <button className="category category1">Contact me</button>
+            </Link>
           </div>
         </div>
       </div>

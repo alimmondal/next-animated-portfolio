@@ -107,11 +107,17 @@
 .a {
   position: relative;
   overflow: hidden;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  /* color: lightgray; */
+  padding: 7px 14px;
+  letter-spacing: 2px;
   transition: 0.2s;
   color: #000;
-  border: 2px solid orange;
-  border-radius: 3px;
+  border: 1px solid orange;
+  /* background: orange; */
+  /* border-radius: 3px; */
 }
 
 .a:hover {
@@ -249,8 +255,8 @@
   }
 
   .a {
-    padding: 4px 8px;
+    padding: 8px 16px;
     letter-spacing: 0px;
-    font-size: 12px;
+    font-weight: normal;
   }
 }

@@ -41,9 +41,26 @@
   background: white;
 }
 
-.button1 {
+/* logo */
+.logo {
   background-color: royalblue;
-  animation: button1 0.5s ease-in-out infinite alternate;
+  animation: logo 0.5s ease-in-out infinite alternate;
+}
+@keyframes logo {
+  to {
+    background-color: #fca61f;
+  }
+}
+
+/* color */
+.contact {
+  color: red;
+  animation: contact 0.5s ease-in-out infinite alternate;
+}
+@keyframes contact {
+  to {
+    color: #fff;
+  }
 }
 
 .category {
@@ -68,12 +85,6 @@
 }
 .category1:hover {
   background-position: left bottom;
-}
-
-@keyframes button1 {
-  to {
-    background-color: #fca61f;
-  }
 }
 
 @media screen and (max-width: 480px) {

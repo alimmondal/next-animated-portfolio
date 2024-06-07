@@ -15,7 +15,7 @@ const Homepage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full flex flex-col gap-2 md:gap-4 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 bg-gradient-to-b from-blue-100 to-red-100 pb-24 md:pb-10 lg:pb-0">
+      <div className="h-screen flex flex-col gap-2 md:gap-4 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 bg-gradient-to-b from-blue-100 to-red-100 pb-24 md:pb-10 lg:pb-0">
         {/* IMAGE CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 relative">
           <Image src="/hero1.png" alt="" fill className="object-contain" />
@@ -42,9 +42,9 @@ const Homepage = () => {
             commitment to excellence.
           </p>
 
-          <div className="w-full flex gap-4">
+          <div className="flex gap-4">
             <Link href={"/portfolio"}>
-              <button className={`py-3 px-5 tracking-widest ${styles.a}`}>
+              <button className={`${styles.a}`}>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -53,7 +53,7 @@ const Homepage = () => {
               </button>
             </Link>
             <Link href={"/contact"}>
-              <button className="category category1">Contact me</button>
+              <button className="category category1">Contact</button>
             </Link>
           </div>
         </div>

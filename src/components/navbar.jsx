@@ -84,12 +84,12 @@ const Navbar = () => {
       <div className="md:hidden lg:flex ">
         <Link
           href={"/"}
-          className="text-sm bg-[#fca61f] rounded-md p-1 font-semibold flex items-center justify-center button1"
+          className="text-sm bg-[#fca61f] rounded-md p-1 font-semibold flex items-center justify-center logo"
         >
           <span className="text-white mr-1 tracking-widest sm:font-bold">
             Alim
           </span>
-          <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center ">
+          <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">
             .dev
           </span>
         </Link>
@@ -130,7 +130,7 @@ const Navbar = () => {
         </div>
         <Link href={"/contact"}>
           <button
-            className="hidden md:flex gap-1 bg-[#fca61f] text-orange hover:border-orange-500 px-4 py-1 rounded-full hover:bg-white transition-all duration-500 hover:text-orange-500 hover:border "
+            className="hidden md:flex gap-1 bg-[#fca61f] text-orange hover:border-orange-500 px-4 py-1 rounded-full hover:bg-white transition-all duration-500 hover:text-orange-500 hover:border"
             style={{ boxShadow: "0px 20px 24px 3px rgba(251, 161, 40, 0.42)" }}
           >
             Contact

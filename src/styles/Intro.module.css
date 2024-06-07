@@ -108,6 +108,7 @@
   position: relative;
   overflow: hidden;
   font-size: 12px;
+
   font-weight: 500;
   text-transform: uppercase;
   /* color: lightgray; */
@@ -116,8 +117,6 @@
   transition: 0.2s;
   color: #000;
   border: 1px solid orange;
-  /* background: orange; */
-  /* border-radius: 3px; */
 }
 
 .a:hover {
@@ -255,7 +254,6 @@
   }
 
   .a {
-    padding: 8px 16px;
     letter-spacing: 0px;
     font-weight: normal;
   }

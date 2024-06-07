@@ -120,7 +120,7 @@ const ContactPage = () => {
           </div>
         </div>
 
-        <div className="mt-[-14rem]">
+        <div className="sm:mt-[-5rem] md:mt-[-7rem] lg:mt-[-14rem]">
           <Footer />
         </div>
       </div>

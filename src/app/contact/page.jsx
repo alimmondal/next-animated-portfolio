@@ -1,8 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Footer from "../../components/Footer";
+import heart from "../../../public/heartemoji.png";
+import Image from "next/image";
+import { FaPhoneVolume } from "react-icons/fa6";
+import { CiMail } from "react-icons/ci";
+import AOS from "aos";
 
 const ContactPage = () => {
   const [success, setSuccess] = useState(false);
@@ -10,6 +15,14 @@ const ContactPage = () => {
   const text = "Say Hello";
 
   const form = useRef();
+
+  useEffect(() => {
+    AOS.init({
+      offset: 120,
+      duration: 3000,
+      easing: "ease",
+    });
+  });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -56,7 +69,17 @@ const ContactPage = () => {
           <div className="h-full flex flex-col lg:flex-row items-center">
             {/* TEXT CONTAINER */}
             <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col items-center justify-center">
-              <div className="text-2xl md:text-6xl">😊</div>
+              <div className="text-2xl md:text-6xl">
+                {/* 😊 */}
+                <Image
+                  src={heart}
+                  width={100}
+                  height={100}
+                  alt="heart"
+                  className="object-cover"
+                  data-aos="zoom-in-down"
+                />
+              </div>
               <div>
                 {text.split("").map((letter, index) => (
                   <motion.span
@@ -74,9 +97,34 @@ const ContactPage = () => {
                   </motion.span>
                 ))}
               </div>
-              <div className="my-8">
-                <p className="">Mobile: +8801751337773</p>
-                <p className="">Email: ialim.dev@gmail.com</p>
+              <div className="my-8 flex flex-col items-start justify-start gap-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 bg-gradient-to-r from-green-400 to-blue-500 md:w-16 md:h-16 rounded-full flex items-center justify-center">
+                    <FaPhoneVolume className=" text-white " />
+                  </div>
+                  <div className="">
+                    <p className="">
+                      <span className="text-blue-500 font-bold italic">
+                        Phone:
+                      </span>{" "}
+                      +8801751337773
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <div className="w-10 bg-gradient-to-r from-green-400 to-blue-500 md:w-16 md:h-16 rounded-full flex items-center justify-center">
+                    <CiMail className=" text-white " />
+                  </div>
+                  <div className="">
+                    <p className="">
+                      <span className="text-blue-500 font-bold italic">
+                        Email:
+                      </span>
+                      italimbd@gmail.com
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -89,7 +137,7 @@ const ContactPage = () => {
               {/* <span>Dear Alim,</span> */}
               <textarea
                 rows={2}
-                className="bg-transparent border-b-2 border-b-black outline-none "
+                className="bg-transparent border-b-2 border-t-0 border-l-0 border-r-0 border-b-black outline-none "
                 name="user_message"
                 placeholder="Write your message"
                 required
@@ -100,7 +148,7 @@ const ContactPage = () => {
                 placeholder="Your mail"
                 type="text"
                 required
-                className="bg-transparent border-b-2 border-b-black outline-none"
+                className="bg-transparent border-b-2 border-b-black border-t-0 border-l-0 border-r-0 outline-none "
               />
               {/* <span>Regards</span> */}
               <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">

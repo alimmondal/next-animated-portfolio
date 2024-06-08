@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import LoadingSpinner from "../../components/LoadingSpinner";
-import Footer from "../../components/Footer";
 
 const BlogPage = () => {
   const [loading, setLoading] = useState(false);

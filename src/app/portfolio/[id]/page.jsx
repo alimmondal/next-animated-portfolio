@@ -13,6 +13,14 @@ const PortfolioDetail = ({ params }) => {
   const { id } = params;
   const { items } = data;
 
+  useEffect(() => {
+    AOS.init({
+      offset: 120,
+      duration: 3000,
+      easing: "ease",
+    });
+  });
+
   // Convert id to number if it's not already
   const itemId = Number(id);
 
@@ -24,14 +32,6 @@ const PortfolioDetail = ({ params }) => {
   if (!item) {
     return <div>Item not found</div>;
   }
-
-  useEffect(() => {
-    AOS.init({
-      offset: 120,
-      duration: 3000,
-      easing: "ease",
-    });
-  });
 
   return (
     <div className="h-[100vh] bg-gradient-to-b from-blue-100 to-red-100 md:pb-10 ">

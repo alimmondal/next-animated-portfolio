@@ -6,7 +6,7 @@ import Footer from "../../components/Footer";
 import heart from "../../../public/heartemoji.png";
 import Image from "next/image";
 import { FaPhoneVolume } from "react-icons/fa6";
-import { CiMail } from "react-icons/ci";
+import { FaMailBulk } from "react-icons/fa";
 import AOS from "aos";
 
 const ContactPage = () => {
@@ -113,14 +113,14 @@ const ContactPage = () => {
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <div className="w-10 bg-gradient-to-r from-green-400 to-blue-500 md:w-16 md:h-16 rounded-full flex items-center justify-center">
-                    <CiMail className=" text-white " />
+                  <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-500 md:w-16 md:h-16 rounded-full flex items-center justify-center">
+                    <FaMailBulk className=" text-white font-bold" />
                   </div>
                   <div className="">
                     <p className="">
                       <span className="text-blue-500 font-bold italic">
                         Email:
-                      </span>
+                      </span>{" "}
                       italimbd@gmail.com
                     </p>
                   </div>

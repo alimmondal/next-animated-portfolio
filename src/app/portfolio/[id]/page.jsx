@@ -1,10 +1,12 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import data from "../../../../Data.json";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "../../../components/Footer";
+import styles from "../../../styles/PortfolioDetail.module.css";
+import AOS from "aos";
 
 const PortfolioDetail = ({ params }) => {
   const { id } = params;
@@ -21,20 +23,40 @@ const PortfolioDetail = ({ params }) => {
   if (!item) {
     return <div>Item not found</div>;
   }
+
+  useEffect(() => {
+    AOS.init({
+      offset: 120,
+      duration: 3000,
+      easing: "ease",
+    });
+  });
+
   return (
-    <div className="h-[100vh] ">
-      <h1 className="text-2xl sm:text-4xl text-center py-3 sm:py-10">
+    <div className="h-[100vh] bg-gradient-to-b from-blue-100 to-red-100 md:pb-10 ">
+      {/* <h1 className="text-2xl sm:text-4xl text-center py-3 sm:py-10">
         Project Detail
-      </h1>
+      </h1> */}
       <div className="h-screen flex flex-col gap-2 md:gap-8 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 bg-gradient-to-b from-blue-100 to-red-100 md:pb-10 lg:pb-0 ">
-        <div className="h-1/4 md:h-full lg:w-1/2 relative ">
+        {/* IMAGE CONTAINER */}
+        <div
+          className={`h-1/4 md:h-full lg:w-1/2 mx-auto self-center ${styles.p}`}
+          data-aos="fade"
+        >
+          <div className={styles.pBrowser}>
+            <div className={styles.pCircle}></div>
+            <div className={styles.pCircle}></div>
+            <div className={styles.pCircle}></div>
+          </div>
           <Image
-            src={item.img}
-            fill
+            src={item.image}
+            width="400"
+            height="400"
             alt="portfolio"
-            className="object-cover md:p-20"
+            className={`object-cover ${styles.pImg}`}
           />
         </div>
+        {/* Text Container */}
         <div className="h-3/4 lg:h-full lg:w-1/2 flex flex-col items-start justify-center gap-2 md:gap-8">
           <h1 className="text-2xl sm:text-4xl">Type: {item?.title}</h1>
           <h1 className="text-">Overview: {item?.desc}</h1>

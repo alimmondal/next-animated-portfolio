@@ -50,10 +50,10 @@
     {
       "id": 1,
       "color": "from-red-300 to-blue-300",
-      "techStack": "Next.js, typescript, Node.js, PostgreSQL,",
+      "techStack": "Next.js, typescript, Node.js, PostgreSQL, MongoDB, and Stripe payment, JWT",
       "title": "E-Shop",
 
-      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+      "desc": "An eCommerce platform, offering a wide range of electronic products.It provides an user-friendly interface, diverse product categories, and secure online shopping experiences.",
       "features": [
         "Stripe payment system for user-friendly checkout process",
         "Admin dashboard to manage his orders, to create, delete and update his products",
@@ -62,14 +62,14 @@
       "img": "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
       "link": "https://next14-e-shop.vercel.app/",
       "image": "/eshops.png",
-      "github": ""
+      "github": "https://github.com/alimmondal/next14-e-shop"
     },
     {
       "id": 2,
       "color": "from-blue-300 to-violet-300",
       "techStack": "Next.js, typescript, Node.js, PostgreSQL,",
       "title": "Airbnb-clone",
-      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+      "desc": " A full-stack web app where hosts can list their properties, including descriptions, photos etc.,  guests/users can rent homes, apartments and can create a wishlist to visit in the future.",
       "features": [
         "Stripe payment system for user-friendly checkout process",
         "Admin dashboard to manage his orders, to create, delete and update his products",
@@ -78,14 +78,14 @@
       "img": "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
       "link": "https://rent-house-virid.vercel.app/",
       "image": "/airbnb.png",
-      "github": ""
+      "github": "https://github.com/alimmondal/airbnb-clone"
     },
     {
       "id": 3,
       "color": "from-violet-300 to-purple-300",
-      "techStack": "Next.js, typescript, Node.js, PostgreSQL,",
+      "techStack": "Next.js, typescript, Node.js, PostgreSQL, Redux RTK Query, JWt and Supabase",
       "title": "Booking app",
-      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+      "desc": "A full stack web app where a user can book an appointment for different services like booking a car or booking a time for servicing their vehicles. A super admin can create admins and the admin can control their own dashboard - create, edit and delete.",
       "features": [
         "Stripe payment system for user-friendly checkout process",
         "Admin dashboard to manage his orders, to create, delete and update his products",
@@ -94,14 +94,14 @@
       "img": "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
       "link": "https://car-bookin-frontend.vercel.app/",
       "image": "/cars.png",
-      "github": ""
+      "github": "https://github.com/alimmondal/react-genius-car-with-payment"
     },
     {
       "id": 4,
       "color": "from-purple-300 to-red-300",
-      "tecStack": "Next.js, typescript, Node.js, PostgreSQL,",
+      "tecStack": "React.js, typescript, Node.js, Express, JWt and MongoDB Database",
       "title": "React Blog",
-      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+      "desc": " A full stack web app where a user can read articles on different topics like software technology. A super admin can create admins and the admin can control their own dashboard - create, edit and delete.",
       "features": [
         "Stripe payment system for user-friendly checkout process",
         "Admin dashboard to manage his orders, to create, delete and update his products",
@@ -110,7 +110,7 @@
       "img": "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "link": "https://mern-blog-luyx.onrender.com/",
       "image": "/blog.png",
-      "github": ""
+      "github": "https://github.com/alimmondal/mern-blog"
     }
   ]
 }

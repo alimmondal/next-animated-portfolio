@@ -7,6 +7,7 @@ import Link from "next/link";
 import Footer from "../../../components/Footer";
 import styles from "../../../styles/PortfolioDetail.module.css";
 import AOS from "aos";
+import { Button } from "flowbite-react";
 
 const PortfolioDetail = ({ params }) => {
   const { id } = params;
@@ -59,21 +60,34 @@ const PortfolioDetail = ({ params }) => {
         {/* Text Container */}
         <div className="h-3/4 lg:h-full lg:w-1/2 flex flex-col items-start justify-center gap-2 md:gap-8">
           <h1 className="text-2xl sm:text-4xl">Type: {item?.title}</h1>
-          <h1 className="text-">Overview: {item?.desc}</h1>
-          <h1 className="text-xs">Tech-stack: {item.techStack}</h1>
-          <p className="">Features:</p>
+          <h1 className="text-">
+            <span className="font-semibold">Overview:</span> {item?.desc}
+          </h1>
+
+          <p className="font-bold animateText">Features:</p>
           <ul className="list-disc pl-5">
             {item.features.map((feature, index) => (
               <li key={index}>{feature}</li>
             ))}
           </ul>
+          <h1 className="text-xs">
+            <span className="font-semibold">Tech-stack:</span> {item.techStack}
+          </h1>
           <div className="text-xl text-sky-500 flex gap-2">
             <Link href={item.link} target="_blank" rel="noopener noreferrer">
-              <button>Live demo</button>
+              <Button gradientDuoTone="purpleToBlue" outline>
+                Live demo
+              </Button>
             </Link>
-            <Link href={item.link} target="_blank" rel="noopener noreferrer">
-              <button>Github link</button>
-            </Link>
+            <Button outline gradientDuoTone="purpleToPink">
+              <Link
+                href={item.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github link
+              </Link>
+            </Button>
           </div>
         </div>
       </div>

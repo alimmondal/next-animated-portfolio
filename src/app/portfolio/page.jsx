@@ -7,6 +7,7 @@ import { useRef } from "react";
 import AboutIcon from "../../components/AboutIcon";
 import Footer from "../../components/Footer";
 import data from "../../../Data.json";
+import { Button } from "flowbite-react";
 
 // const items = [
 //   {
@@ -109,25 +110,22 @@ const PortfolioPage = () => {
                     {item.desc}
                   </p>
 
-                  <div className="flex self-end">
-                    <Link
-                      href={`/portfolio/${item.id}`}
-                      className="flex justify-end"
-                    >
-                      <button className="p-2 text-sm md:p-4 md:text-md lg:text-lg bg-sky-500 text-white font-semibold m-4 rounded">
+                  <div className="flex gap-3 self-end">
+                    <Link href={`/portfolio/${item.id}`} className="">
+                      <Button gradientDuoTone="purpleToPink" className="">
                         See Details
-                      </button>
+                      </Button>
                     </Link>
-                    <a
+                    <Link
                       href={item.link}
-                      className="flex justify-end"
+                      // className="flex justify-end"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <button className="p-2 text-sm md:p-4 md:text-md bg-sky-500 text-white font-semibold m-4 rounded">
+                      <Button gradientDuoTone="purpleToBlue" className="">
                         See Demo
-                      </button>
-                    </a>
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -158,12 +156,13 @@ const PortfolioPage = () => {
               </textPath>
             </text>
           </motion.svg>
-          <button
+          <Button
+            gradientDuoTone="purpleToPink"
             onClick={() => push("/contact")}
             className="w-20 h-20 text-xs md:text-lg md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-sky-500 text-white rounded-full flex items-center justify-center p-1"
           >
             Contact Me
-          </button>
+          </Button>
         </div>
       </div>
       <div className="sm:mt-[-5rem] md:mt-[-7rem] lg:mt-[-14rem]">

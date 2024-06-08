@@ -99,12 +99,12 @@ const ContactPage = () => {
               </div>
               <div className="my-8 flex flex-col items-start justify-start gap-3">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 bg-gradient-to-r from-green-400 to-blue-500 md:w-16 md:h-16 rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-500 md:w-16 md:h-16 rounded-full flex items-center justify-center">
                     <FaPhoneVolume className=" text-white " />
                   </div>
                   <div className="">
                     <p className="">
-                      <span className="text-blue-500 font-bold italic">
+                      <span className="text-blue-500 font-bold italic hidden md:block">
                         Phone:
                       </span>{" "}
                       +8801751337773
@@ -118,7 +118,7 @@ const ContactPage = () => {
                   </div>
                   <div className="">
                     <p className="">
-                      <span className="text-blue-500 font-bold italic">
+                      <span className="text-blue-500 font-bold italic hidden md:block">
                         Email:
                       </span>{" "}
                       italimbd@gmail.com

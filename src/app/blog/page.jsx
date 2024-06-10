@@ -10,7 +10,7 @@ const BlogPage = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 20000);
   }, []);
 
   return (

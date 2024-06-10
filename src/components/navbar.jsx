@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import NavLink from "./navLink";
 import { RiPhoneFill } from "react-icons/ri";
+import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
   const [open, setOpen] = useState();
@@ -119,7 +120,7 @@ const Navbar = () => {
           <FaFacebook size={24} className="text-sky-700" />
         </Link>
       </div> */}
-      <div className="flex items-center gap-2">
+      <div className="flex items-center justify-center gap-2">
         <div className="hidden md:flex text-orange-400">
           <RiPhoneFill size={24} />
           <p>
@@ -128,13 +129,18 @@ const Navbar = () => {
             </a>
           </p>
         </div>
-        <Link href={"/contact"}>
-          <button
-            className="hidden md:flex gap-1 bg-[#fca61f] text-orange hover:border-orange-500 px-4 py-1 rounded-full hover:bg-white transition-all duration-500 hover:text-orange-500 hover:border"
+        <Link
+          href={"/contact"}
+          className="hidden md:flex ml-11 md:mr-10 lg:mr-auto"
+        >
+          <div
+            className={styles.center}
             style={{ boxShadow: "0px 20px 24px 3px rgba(251, 161, 40, 0.42)" }}
           >
-            Contact
-          </button>
+            <p className={styles.a} title="Contact">
+              contact
+            </p>
+          </div>
         </Link>
       </div>
 

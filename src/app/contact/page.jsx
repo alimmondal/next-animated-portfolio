@@ -10,12 +10,6 @@ import { FaMailBulk } from "react-icons/fa";
 import AOS from "aos";
 
 const ContactPage = () => {
-  const [success, setSuccess] = useState(false);
-  const [error, setError] = useState(false);
-  const text = "Say Hello";
-
-  const form = useRef();
-
   useEffect(() => {
     AOS.init({
       offset: 120,
@@ -23,6 +17,12 @@ const ContactPage = () => {
       easing: "ease",
     });
   });
+
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
+  const text = "Say Hello";
+
+  const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -70,7 +70,6 @@ const ContactPage = () => {
             {/* TEXT CONTAINER */}
             <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col items-center justify-center">
               <div className="text-2xl md:text-6xl">
-                {/* 😊 */}
                 <Image
                   src={heart}
                   width={100}

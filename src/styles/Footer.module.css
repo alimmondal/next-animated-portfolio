@@ -17,7 +17,7 @@
   gap: 4rem;
   color: black;
   overflow: hidden;
-  transform: scale(0.6);
+  transform: scale(0.5);
 }
 .fIcons {
   display: flex;

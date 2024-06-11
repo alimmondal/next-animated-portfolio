@@ -8,6 +8,8 @@ import Image from "next/image";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { FaMailBulk } from "react-icons/fa";
 import AOS from "aos";
+import "aos/dist/aos.css";
+import { once } from "events";
 
 const ContactPage = () => {
   useEffect(() => {
@@ -16,7 +18,7 @@ const ContactPage = () => {
       duration: 3000,
       easing: "ease",
     });
-  });
+  }, []);
 
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);

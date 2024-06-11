@@ -129,7 +129,7 @@ const Navbar = () => {
             </a>
           </p>
         </div>
-        <Link href={"/contact"} className="hidden md:flex md:mr-10 lg:mr-auto">
+        <Link href={"/contact"} className="hidden md:flex md:pr-20 ">
           <div
             className={styles.center}
             style={{ boxShadow: "0px 20px 24px 3px rgba(251, 161, 40, 0.42)" }}

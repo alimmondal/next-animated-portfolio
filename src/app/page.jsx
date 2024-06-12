@@ -5,9 +5,19 @@ import Image from "next/image";
 import styles from "../styles/Intro.module.css";
 import Footer from "../components/Footer";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Homepage = () => {
   // const { push } = useRouter();
+  useEffect(() => {
+    AOS.init({
+      offset: 120,
+      duration: 3000,
+      easing: "ease",
+    });
+  }, []);
   return (
     <motion.div
       className="h-full"
@@ -17,7 +27,10 @@ const Homepage = () => {
     >
       <div className="h-screen flex flex-col gap-2 md:gap-4 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 bg-gradient-to-b from-blue-100 to-red-100 pb-24 md:pb-10 lg:pb-0">
         {/* IMAGE CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 relative">
+        <div
+          className="h-1/2 lg:h-full lg:w-1/2 relative "
+          data-aos="fade-right"
+        >
           <Image src="/hero1.png" alt="" fill className="object-contain" />
         </div>
         {/* TEXT CONTAINER */}

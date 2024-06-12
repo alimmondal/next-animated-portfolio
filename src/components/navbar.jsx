@@ -2,13 +2,26 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavLink from "./navLink";
 import { RiPhoneFill } from "react-icons/ri";
 import styles from "../styles/Navbar.module.css";
+import { usePathname, useRouter } from "next/navigation";
+import { FaBackward } from "react-icons/fa";
 
 const Navbar = () => {
   const [open, setOpen] = useState();
+
+  const [showBackButton, setShowBackButton] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
+
+  useEffect(() => {
+    // Check if the current route is the contact page
+    setShowBackButton(pathname === "/contact");
+  }, [pathname]);
+  console.log("router", router);
+
   const links = [
     { url: "/", title: "Home" },
     { url: "/about", title: "About" },
@@ -96,30 +109,6 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* SOCIAL/ PHONE */}
-      {/* <div className="hidden md:flex gap-2">
-        <Link
-          href={"https://github.com/alimmondal"}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <AiOutlineGithub size={24} />
-        </Link>
-        <Link
-          href={"https://www.linkedin.com/in/alim-mondol/"}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <AiFillLinkedin size={24} className="text-sky-500" />
-        </Link>
-        <Link
-          href={"https://www.facebook.com/profile.php?id=100022439445805"}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaFacebook size={24} className="text-sky-700" />
-        </Link>
-      </div> */}
       <div className="flex items-center justify-center gap-2">
         <div className="hidden md:flex text-orange-400">
           <RiPhoneFill size={24} />
@@ -129,14 +118,30 @@ const Navbar = () => {
             </a>
           </p>
         </div>
-        <Link href={"/contact"} className="hidden md:flex md:pr-20 ">
-          <div
-            className={styles.center}
-            style={{ boxShadow: "0px 20px 24px 3px rgba(251, 161, 40, 0.42)" }}
+
+        {showBackButton ? (
+          <button
+            onClick={() => router.back()}
+            className="hidden md:flex md:pr-20"
           >
-            <p className={styles.a} title="Contact"></p>
-          </div>
-        </Link>
+            <div className="bg-orange-400 px-2 py-1 hover:bg-white hover:border hover:border-orange-400 transition-all duration-1000 ">
+              <div className="flex items-center gap-2 text-white hover:text-black ">
+                <FaBackward /> <p>Back</p>
+              </div>
+            </div>
+          </button>
+        ) : (
+          <Link href={"/contact"} className="hidden md:flex md:pr-20 ">
+            <div
+              className={styles.center}
+              style={{
+                boxShadow: "0px 20px 24px 3px rgba(251, 161, 40, 0.42)",
+              }}
+            >
+              <p className={styles.a} title="Contact"></p>
+            </div>
+          </Link>
+        )}
       </div>
 
       {/* RESPONSIVE MENU */}

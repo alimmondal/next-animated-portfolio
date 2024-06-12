@@ -9,7 +9,6 @@ import { FaPhoneVolume } from "react-icons/fa6";
 import { FaMailBulk } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { once } from "events";
 
 const ContactPage = () => {
   useEffect(() => {

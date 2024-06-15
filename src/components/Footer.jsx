@@ -15,7 +15,7 @@ const Footer = () => {
       <Image src={Wave} alt="" className="w-full h-full" />
 
       <div className={styles.fContent}>
-        <div className="text-slate-500 flex items-center justify-center gap-2 mt-20 md:mt-40 md:pb-5">
+        <div className="text-black flex items-center justify-center gap-2 mt-20 md:mt-40 md:pb-5">
           <ul className="flex gap-4 ">
             <li>
               <Link

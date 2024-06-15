@@ -37,8 +37,8 @@ const SocialLinks = () => {
               />
             </span>
             <span
-              className={`font-semibold text-slate-500 overflow-hidden transition-all duration-500 ${
-                index === activeLink ? "max-w-[140px]" : "max-w-0"
+              className={`font-semibold text-black tracking-widest overflow-hidden transition-all duration-500 ${
+                index === activeLink ? "max-w-[140px] ml-1" : "max-w-0"
               }`}
             >
               {item?.icon}

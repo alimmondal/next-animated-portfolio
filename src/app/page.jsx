@@ -71,7 +71,7 @@ const Homepage = () => {
           </div>
         </div>
       </div>
-      <div className="sm:mt-[-5rem] md:mt-[-7rem] lg:mt-[-14rem]">
+      <div className="sm:mt-[-5rem] lg:mt-[-14rem]">
         <Footer />
       </div>
     </motion.div>

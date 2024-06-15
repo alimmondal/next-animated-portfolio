@@ -8,6 +8,8 @@ import { RiPhoneFill } from "react-icons/ri";
 import styles from "../styles/Navbar.module.css";
 import { usePathname, useRouter } from "next/navigation";
 import { FaBackward } from "react-icons/fa";
+import Image from "next/image";
+import logo from "../../public/logo.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState();
@@ -20,7 +22,7 @@ const Navbar = () => {
     // Check if the current route is the contact page
     setShowBackButton(pathname === "/contact");
   }, [pathname]);
-  console.log("router", router);
+  // console.log("router", router);
 
   const links = [
     { url: "/", title: "Home" },
@@ -100,11 +102,24 @@ const Navbar = () => {
           href={"/"}
           className="text-sm bg-[#fca61f] rounded-md p-1 font-semibold flex items-center justify-center logo"
         >
-          <span className="text-white mr-1 tracking-widest sm:font-bold">
-            Alim
+          <span className="w-12 h-8 flex items-center justify-center text-white mr-1 tracking-widest sm:font-bold">
+            <Image
+              src={logo}
+              width={100}
+              height={100}
+              alt="logo"
+              className="object-cover"
+            />
           </span>
-          <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">
-            .dev
+          <span className="w-12 h-8 rounded bg-white text-black tracking-widest flex items-center justify-center">
+            {/* <Image
+              src={logo}
+              width={100}
+              height={100}
+              alt="logo"
+              className="object-cover"
+            /> */}
+            Alim
           </span>
         </Link>
       </div>
@@ -125,19 +140,14 @@ const Navbar = () => {
             className="hidden md:flex md:pr-20"
           >
             <div className="bg-orange-400 px-2 py-1 hover:bg-white hover:border hover:border-orange-400 transition-all duration-1000 ">
-              <div className="flex items-center gap-2 text-white hover:text-black ">
+              <div className="flex items-center gap-2 text-white hover:text-black">
                 <FaBackward /> <p>Back</p>
               </div>
             </div>
           </button>
         ) : (
-          <Link href={"/contact"} className="hidden md:flex md:pr-20 ">
-            <div
-              className={styles.center}
-              style={{
-                boxShadow: "0px 20px 24px 3px rgba(251, 161, 40, 0.42)",
-              }}
-            >
+          <Link href={"/contact"} className="hidden md:flex md:pr-28 ">
+            <div className="absolute top-[2rem]">
               <p className={styles.a} title="Contact"></p>
             </div>
           </Link>
@@ -185,6 +195,9 @@ const Navbar = () => {
                 <Link href={link.url}>{link.title}</Link>
               </motion.div>
             ))}
+            <Link href={"/contact"}>
+              <button>Contact</button>
+            </Link>
           </motion.div>
         )}
       </div>
